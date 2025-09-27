@@ -1,4 +1,5 @@
 #![allow(dead_code, unused_variables)]
+mod conditionals;
 mod data_types;
 mod operators;
 
@@ -6,21 +7,10 @@ pub fn main() {
     println!("Chapter 3: Data types");
     data_types::main();
     operators::main();
-    conditionals();
+    conditionals::main();
     arrays();
     tuples();
     range();
-}
-
-fn conditionals() {
-    let purchased_ticket = true;
-    let plane_on_time = true;
-    let making_event = purchased_ticket && plane_on_time;
-    if making_event {
-        println!("You can attend the event!");
-    } else {
-        println!("You cannot attend the event.");
-    }
 }
 
 fn arrays() {
