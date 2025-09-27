@@ -1,5 +1,6 @@
 #![allow(dead_code, unused_variables)]
 mod arrays;
+mod casting;
 mod conditionals;
 mod data_types;
 mod operators;
