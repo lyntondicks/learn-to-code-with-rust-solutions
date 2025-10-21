@@ -6,6 +6,7 @@ use learn_to_code_with_rust_solutions::chapter6;
 use learn_to_code_with_rust_solutions::chapter7;
 use learn_to_code_with_rust_solutions::chapter8;
 use learn_to_code_with_rust_solutions::chapter9;
+use learn_to_code_with_rust_solutions::chapter10;
 
 fn main() {
     println!("Learn to code with Rust!");
@@ -17,4 +18,5 @@ fn main() {
     chapter7::main();
     chapter8::main();
     chapter9::main();
+    chapter10::main();
 }
