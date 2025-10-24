@@ -3,7 +3,7 @@ mod project_solution;
 use project_solution::chapter13_project_solution;
 
 pub fn main() {
-    println!("Chapter 13 main function");
+    println!("Chapter 13: Vectors");
     chapter13_vectors();
     chapter13_project_solution();
 }
