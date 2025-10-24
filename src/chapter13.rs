@@ -1,3 +1,7 @@
+mod project_solutions;
+
+use project_solutions::chapter13_project_solution;
+
 pub fn main() {
     println!("Chapter 13 main function");
     chapter13_vectors();
@@ -11,7 +15,7 @@ fn chapter13_vectors() {
     numbers.push(3);
     println!("{:?}", numbers);
 
-    let pizza_diameters = Vec::<i32>::new();
+    let _pizza_diameters = Vec::<i32>::new();
     let mut pizza_diameters = vec![8, 10, 12, 14];
     pizza_diameters.push(16);
     pizza_diameters.push(18);
@@ -21,7 +25,7 @@ fn chapter13_vectors() {
     let last_pizza_diameter = pizza_diameters.pop(); // Removes the last element and returns it
     println!("{:?}", last_pizza_diameter);
 
-    let third_diameter_from_start = pizza_diameters.remove(2);
+    let _third_diameter_from_start = pizza_diameters.remove(2);
 
     println!("{:?}", pizza_diameters);
 
@@ -30,11 +34,11 @@ fn chapter13_vectors() {
     let sausage = String::from("Sausage");
     let pizza_toppings = vec![pepperoni, mushroom, sausage];
 
-    let value = pizza_diameters[2]; // i32 implements copy trait, so value is a copy of pizza_diameters[2]
+    let _value = pizza_diameters[2]; // i32 implements copy trait, so value is a copy of pizza_diameters[2]
     let reference = &pizza_toppings[2]; // reference to the third element in pizza_toppings, String does not implement copy trait
     println!("{reference}");
 
-    let pizza_slice = &pizza_diameters[1..3]; // Slicing the vector to get a slice of the second and third elements
+    let _pizza_slice = &pizza_diameters[1..3]; // Slicing the vector to get a slice of the second and third elements
     let option = pizza_toppings.get(2); // Some variant with reference String
     match option {
         Some(topping) => println!("The topping is {topping}"),
@@ -50,7 +54,7 @@ fn chapter13_vectors() {
     // let reference = &delicious_toppings[2];  // Will fail
     target_topping.push_str(" and Meatballs");
     // But previous line is the last time the mutable reference is used, so we can create an immutable reference now
-    let reference = &delicious_toppings[2];
+    let _reference = &delicious_toppings[2];
     println!("{:#?}", delicious_toppings);
 
     let mut seasons: Vec<&str> = Vec::with_capacity(4);
@@ -76,57 +80,4 @@ fn chapter13_vectors() {
         seasons.len(),
         seasons.capacity()
     );
-}
-
-// chapter13 project solution
-#[derive(Debug)]
-struct MyFile {
-    name: String,
-}
-
-#[derive(Debug)]
-struct Folder {
-    name: String,
-    contents: Vec<MyFile>,
-}
-
-impl Folder {
-    fn new(name: &str) -> Self {
-        Self {
-            name: String::from(name),
-            contents: Vec::new(), // or vec![]
-        }
-    }
-
-    fn create_file(&mut self, name: &str) {
-        let file = MyFile {
-            name: String::from(name),
-        };
-        self.contents.push(file);
-    }
-
-    fn delete_file(&mut self, index: usize) -> Result<MyFile, String> {
-        if index < self.contents.len() {
-            Ok(self.contents.remove(index))
-        } else {
-            Err(String::from("File index out of bounds"))
-        }
-    }
-
-    fn get_file(&self, index: usize) -> Option<&MyFile> {
-        self.contents.get(index)
-    }
-}
-
-fn chapter13_project_solution() {
-    let mut my_folder = Folder::new("My Documents");
-    my_folder.create_file("Resume.docx");
-    my_folder.create_file("CoverLetter.docx");
-    let _ = my_folder.delete_file(1);
-    println!("{:#?}", my_folder);
-    let file = my_folder.get_file(0);
-    match file {
-        Some(f) => println!("File found: {:?}", f),
-        None => println!("File not found"),
-    }
 }
