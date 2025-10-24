@@ -1,6 +1,6 @@
-mod project_solutions;
+mod project_solution;
 
-use project_solutions::chapter13_project_solution;
+use project_solution::chapter13_project_solution;
 
 pub fn main() {
     println!("Chapter 13 main function");
