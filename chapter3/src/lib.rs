@@ -7,7 +7,7 @@ mod operators;
 mod range;
 mod tuples;
 
-pub fn main() {
+pub fn chapter3() {
     println!("Chapter 3: Data types");
     data_types::main();
     operators::main();

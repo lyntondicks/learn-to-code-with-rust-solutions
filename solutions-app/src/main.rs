@@ -1,5 +1,5 @@
 use chapter2::chapter2;
-use solutions_app::chapter3;
+use chapter3::chapter3;
 use solutions_app::chapter4;
 use solutions_app::chapter5;
 use solutions_app::chapter6;
@@ -14,7 +14,7 @@ use solutions_app::chapter13;
 fn main() {
     println!("Learn to code with Rust!");
     chapter2();
-    chapter3::main();
+    chapter3();
     chapter4::main();
     chapter5::main();
     chapter6::main();
