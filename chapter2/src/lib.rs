@@ -12,7 +12,7 @@ Multi-line comment
  */
 
 // #[allow(unused_variables)]
-pub fn main() {
+pub fn chapter2() {
     println!("Chapter 2");
 
     print!("1.");
