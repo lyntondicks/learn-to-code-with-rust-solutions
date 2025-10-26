@@ -1,6 +1,6 @@
-pub fn main() {
+pub fn chapter4() {
     println!("Chapter 4: Functions");
-    open_store("Downtown", 5);    
+    open_store("Downtown", 5);
 }
 
 fn open_store(neighborhood: &str, _store_count: u32) -> () {
