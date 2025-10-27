@@ -1,4 +1,4 @@
-pub fn main() {
+pub fn chapter5() {
     println!("Chapter 5: Control Flow");
     branching();
     iteration();
