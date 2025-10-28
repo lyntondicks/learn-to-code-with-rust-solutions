@@ -1,4 +1,4 @@
-pub fn main() {
+pub fn chapter6() {
     println!("Chapter 6: Ownership, References, and Borrowing");
     strings();
     copy_trait();
@@ -72,7 +72,7 @@ fn references_and_borrowing() {
     let my_meal = String::from("Pasta");
     show_my_meal(&my_meal); // Borrowing my_meal, passing a reference to the function
     // The ownership of my_meal is not transferred, so it can still be used after borrowing
-    println!("My meal after borrowing: {}", my_meal); // This is still valid  
+    println!("My meal after borrowing: {}", my_meal); // This is still valid
 
     add_flour(&mut cake); // Borrowing cake mutably, passing a mutable reference to the function
 }
