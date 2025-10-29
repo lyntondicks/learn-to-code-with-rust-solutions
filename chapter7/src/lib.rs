@@ -1,10 +1,10 @@
 #![allow(dead_code, unused_variables, unused_mut)]
 
-pub fn main() {
+pub fn chapter7() {
     println!("Chapter 7: References and Borrowing");
     mutable_reference_restrictions();
     dangling_reference();
-    array_and_tuple_ownership(); 
+    array_and_tuple_ownership();
 }
 
 fn mutable_reference_restrictions() {
