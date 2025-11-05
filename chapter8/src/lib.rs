@@ -1,4 +1,4 @@
-pub fn main() {
+pub fn chapter8() {
     println!("Chapter 8: Slices");
     string_slices();
     array_slice();
