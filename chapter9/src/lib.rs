@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-pub fn main() {
+pub fn chapter9() {
     println!("--- Chapter 9: Structs and Methods ---");
     named_field_structs();
     struct_methods();
