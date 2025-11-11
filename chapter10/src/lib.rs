@@ -2,7 +2,7 @@
 #![allow(unused_variables)]
 #![allow(unused_assignments)]
 
-pub fn main() {
+pub fn chapter10() {
     println!("--- Chapter 10: Enums --");
     enums();
     chapter_10_enums_project_solution();
