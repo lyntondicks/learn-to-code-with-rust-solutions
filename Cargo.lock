@@ -7,6 +7,10 @@ name = "chapter10"
 version = "0.1.0"
 
 [[package]]
+name = "chapter11"
+version = "0.1.0"
+
+[[package]]
 name = "chapter2"
 version = "0.1.0"
 
@@ -43,6 +47,7 @@ name = "solutions_app"
 version = "0.1.0"
 dependencies = [
  "chapter10",
+ "chapter11",
  "chapter2",
  "chapter3",
  "chapter4",

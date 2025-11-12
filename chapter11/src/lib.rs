@@ -2,7 +2,7 @@
 #![allow(dead_code)]
 #![allow(unused_assignments)]
 
-pub fn main() {
+pub fn chapter11() {
     chapter_11_generics();
     chapter_11_project_solution();
 }
