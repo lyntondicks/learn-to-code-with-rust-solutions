@@ -8,7 +8,7 @@ use option_enum::option_enum;
 use project_solution::chapter_12_project_solution;
 use result_enum::result_enum;
 
-pub fn main() {
+pub fn chapter12() {
     option_enum();
     result_enum();
     chapter_12_project_solution();

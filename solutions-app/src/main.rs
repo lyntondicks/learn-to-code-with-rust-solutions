@@ -8,7 +8,7 @@ use chapter8::chapter8;
 use chapter9::chapter9;
 use chapter10::chapter10;
 use chapter11::chapter11;
-use solutions_app::chapter12;
+use chapter12::chapter12;
 use solutions_app::chapter13;
 
 fn main() {
@@ -23,6 +23,6 @@ fn main() {
     chapter9();
     chapter10();
     chapter11();
-    chapter12::main();
+    chapter12();
     chapter13::main();
 }
