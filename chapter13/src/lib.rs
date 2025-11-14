@@ -2,7 +2,7 @@ mod project_solution;
 
 use project_solution::chapter13_project_solution;
 
-pub fn main() {
+pub fn chapter13() {
     println!("Chapter 13: Vectors");
     chapter13_vectors();
     chapter13_project_solution();
