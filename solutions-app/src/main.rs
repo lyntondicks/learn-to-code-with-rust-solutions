@@ -10,6 +10,7 @@ use chapter10::chapter10;
 use chapter11::chapter11;
 use chapter12::chapter12;
 use chapter13::chapter13;
+use chapter15::chapter15;
 
 fn main() {
     println!("Learn to code with Rust!");
@@ -25,4 +26,5 @@ fn main() {
     chapter11();
     chapter12();
     chapter13();
+    chapter15();
 }
