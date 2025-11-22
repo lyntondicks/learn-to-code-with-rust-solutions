@@ -35,12 +35,16 @@ pub fn hash_maps() {
     let value = coffee_pairings["Espresso"]; // will panic if key doesn't exist
     println!("Espresso is paired with: {}", value);
 
-    let value = coffee_pairings.get("Cappuccino").copied();
+    // get wont panic if key doesn't exist.
+    // copied() method is used to create a copy of the value associated with the key.
+    // so that Option<&&str> is turned into Option<&str>
+    let value: Option<&str> = coffee_pairings.get("Cappuccino").copied();
     println!(
         "Cappuccino is paired with: {}",
         value.unwrap_or("No pairing found")
     );
 
+    // .entry() method returns an Entry enum which can be used to insert or update a value
     coffee_pairings.entry("Cappuccino").or_insert("Almond Milk"); // will not replace existing value
     println!("{:#?}", coffee_pairings);
 }
