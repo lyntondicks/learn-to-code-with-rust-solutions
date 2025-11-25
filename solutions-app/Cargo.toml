@@ -18,3 +18,4 @@ chapter12 = { path = "../chapter12" }
 chapter13 = { path = "../chapter13" }
 chapter15 = { path = "../chapter15" }
 chapter16 = { path = "../chapter16" }
+chapter17 = { path = "../chapter17" }
