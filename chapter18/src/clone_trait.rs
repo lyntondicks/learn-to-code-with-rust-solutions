@@ -1,7 +1,5 @@
-
 #[derive(Debug)] // #[derive(Debug, Clone)]
 struct Appointment {
-    doctor: String,
     doctor: String,
     start_time: String,
     end_time: String,
