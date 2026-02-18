@@ -15,7 +15,7 @@ impl Appointment {
     }
 }
 
-// Can derive Clone Trait instead if all members are Clone
+// You can derive `Clone` instead when all fields implement `Clone`.
 impl Clone for Appointment {
     fn clone(&self) -> Self {
         Self {
