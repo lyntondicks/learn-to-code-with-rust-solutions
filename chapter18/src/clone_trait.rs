@@ -33,12 +33,12 @@ pub fn clone_trait() {
     let cloned_appointment = original_appointment.clone();
 
     println!(
-        "Original Appointment: Dr. {}, from {} to {}",
+        "Original Appointment: {}, from {} to {}",
         original_appointment.doctor, original_appointment.start_time, original_appointment.end_time
     );
 
     println!(
-        "Cloned Appointment: Dr. {}, from {} to {}",
+        "Cloned Appointment: {}, from {} to {}",
         cloned_appointment.doctor, cloned_appointment.start_time, cloned_appointment.end_time
     );
 }
