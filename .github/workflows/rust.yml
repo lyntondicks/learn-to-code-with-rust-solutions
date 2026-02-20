@@ -10,7 +10,6 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  # This job satisfies the "lint" requirement in your ruleset
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +23,6 @@ jobs:
       - name: Clippy
         run: cargo clippy -- -D warnings
 
-  # This job satisfies the "test" requirement in your ruleset
   test:
     runs-on: ubuntu-latest
     steps:
