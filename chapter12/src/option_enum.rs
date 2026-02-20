@@ -20,6 +20,7 @@ impl MyOption {
     }
 }
 
+#[allow(clippy::unnecessary_literal_unwrap)]
 pub fn option_enum() {
     let _a = Some(5);
     let _b = Option::Some("hello");

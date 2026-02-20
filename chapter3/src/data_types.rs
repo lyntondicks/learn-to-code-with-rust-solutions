@@ -1,3 +1,5 @@
+use std::f64;
+
 pub fn main() {
     data_types();
 }
@@ -23,7 +25,7 @@ fn data_types() {
     println!("Trimmed content: '{}'", empty_space.trim()); // Using trim() to remove whitespace
     println!("{}", value_methods.pow(2)); // Using the pow() method to raise to the power of 2
 
-    let pi: f64 = 3.1415926535897932384; // Floating-point number
+    let pi: f64 = f64::consts::PI; // Floating-point number
     println!("Pi rounded down: {}", pi.floor()); // Using floor() to round down
     println!("Pi rounded up: {}", pi.ceil()); // Using ceil() to round up
     println!("Pi rounded: {}", pi.round()); // Using round() to round to the nearest integer

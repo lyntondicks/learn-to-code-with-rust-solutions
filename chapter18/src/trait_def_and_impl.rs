@@ -8,7 +8,7 @@ pub trait Description {
     /// Returns a description of the accommodation.
     /// Default implementation returns a generic description.
     fn get_description(&self) -> String {
-        format!("A great place to stay!")
+        "A great place to stay!".to_string()
     }
 }
 

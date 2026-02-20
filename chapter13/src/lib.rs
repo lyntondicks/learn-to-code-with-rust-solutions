@@ -8,6 +8,7 @@ pub fn chapter13() {
     chapter13_project_solution();
 }
 
+#[allow(clippy::vec_init_then_push)]
 fn chapter13_vectors() {
     let mut numbers = Vec::new();
     numbers.push(1);

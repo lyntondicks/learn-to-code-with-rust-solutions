@@ -77,7 +77,7 @@ fn references_and_borrowing() {
     add_flour(&mut cake); // Borrowing cake mutably, passing a mutable reference to the function
 }
 
-fn transfer_ownership(mut value: String) -> () {
+fn transfer_ownership(mut value: String) {
     println!("Transferring ownership of value: {}", value);
     // The value is moved here, and the original owner can no longer use it
     value.push_str(" - Updated"); // Modifying the value
@@ -90,12 +90,12 @@ fn bake_cake() -> String {
     String::from("Chocolate Mousse") // Implicit return, no need for the return keyword
 }
 
-fn show_my_meal(meal: &String) -> () {
+fn show_my_meal(meal: &String) {
     println!("My meal is: {}", meal);
     // The meal is borrowed, so the ownership is not transferred
 }
 
-fn add_flour(meal: &mut String) -> () {
+fn add_flour(meal: &mut String) {
     meal.push_str(" with flour");
     println!("Meal after adding flour: {}", meal);
 }

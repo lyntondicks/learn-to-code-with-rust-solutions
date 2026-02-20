@@ -12,8 +12,8 @@ pub fn chapter15() {
     println!("{full_name}");
     // println!("{first_name}"); // first_name is no longer valid after the + operation; ownership has been transferred, '+' calls String::add
 
-    let first_name = format!("Sylvester ");
-    let last_name = format!("Stallone");
+    let first_name = "Sylvester ".to_string(); // format!("Sylvester ");
+    let last_name = "Stallone".to_string(); // format!("Stallone");
     let icon = format!("{first_name}{last_name}");
     println!("{icon}, {first_name}: {last_name}");
 

@@ -49,6 +49,7 @@ fn length_of_last_element(input: &mut Vec<&str>) -> Option<usize> {
     Some(input.pop()?.len())
 }
 
+#[allow(clippy::question_mark)]
 fn read_file_without_try_operator() -> Result<String, io::Error> {
     println!("Please enter the name of the file you'd like to read:");
     let mut input = String::new();
