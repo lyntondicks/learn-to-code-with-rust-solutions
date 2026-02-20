@@ -19,7 +19,8 @@ fn branching() {
     }
 
     // if expression
-    let _is_summer = if season == "summer" { true } else { false };
+    // let _is_summer = if season == "summer" { true } else { false };
+    let _is_summer = season == "summer";
 
     // match expression
     match season {

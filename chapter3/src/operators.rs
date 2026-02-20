@@ -3,6 +3,7 @@ pub fn main() {
 }
 
 #[allow(unused_assignments)]
+#[allow(clippy::assign_op_pattern)]
 fn operators() {
     let a = 10;
     let b = 20;

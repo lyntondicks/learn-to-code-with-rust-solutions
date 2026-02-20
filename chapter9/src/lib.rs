@@ -121,8 +121,8 @@ impl TaylorSwiftSong {
 }
 
 impl TaylorSwiftSong {
-    fn display_song_info(self: &Self) {
-        // or just &self. Method (Takes Self as parameter)
+    fn display_song_info(&self) {
+        // or self: &Self
         println!(
             "Song: {}, Released: {}, Duration: {} seconds, Years Since Release: {}",
             self.title,

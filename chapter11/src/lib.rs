@@ -2,6 +2,8 @@
 #![allow(dead_code)]
 #![allow(unused_assignments)]
 
+use std::f64;
+
 pub fn chapter11() {
     chapter_11_generics();
     chapter_11_project_solution();
@@ -60,7 +62,7 @@ fn chapter_11_generics() {
     println!("{}", identity(String::from("Generics in Rust")));
 
     make_tuple(5, "Hello");
-    make_tuple(3.14, 42);
+    make_tuple(f64::consts::PI, 42);
 
     let gold_chest = TreasureChest {
         captain: String::from("Captain Jack Sparrow"),

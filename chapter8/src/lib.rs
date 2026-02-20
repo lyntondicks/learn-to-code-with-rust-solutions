@@ -5,6 +5,7 @@ pub fn chapter8() {
     chapter8_project_solution();
 }
 
+#[allow(clippy::redundant_slicing)]
 fn string_slices() {
     let literal_action_hero: &str = "Arnold Schwarzenegger"; // String literal, stored in program binary
     let _full_slice = &literal_action_hero[..];

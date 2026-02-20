@@ -2,7 +2,8 @@ pub fn main() {
     range();
 }
 
-fn range() -> () {
+// fn range() -> ()
+fn range() {
     let range: std::ops::Range<i32> = 1..31; //   1 to 30
     dbg!(range);
     let range = 1..=31; // 1 to 31 inclusive
