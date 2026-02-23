@@ -20,7 +20,7 @@ impl PartialEq for BusTrip {
     }
 }
 
-// deriving PartialEq will implement equality for all fields
+// deriving via #[derive(PartialEq)] will implement equality for all fields
 #[derive(Debug)]
 struct Flight {
     origin: String,
