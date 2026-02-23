@@ -94,9 +94,9 @@ pub fn partial_eq() {
 
     let bus_trip = BusTrip::new("New York", "Los Angeles", "10:00 AM");
     println!("flight1 == bus_trip: {}", flight1 == bus_trip); // true
-    println!("flight1 == bus_trip: {}", flight1.eq(&bus_trip)); // true
-    println!("bus_trip == flight1: {}", bus_trip.eq(&flight1)); // true
-    println!("bus_trip == flight1: {}", bus_trip == flight1); // false
+    println!("flight1.eq(&bus_trip): {}", flight1.eq(&bus_trip)); // true
+    println!("bus_trip.eq(&flight1): {}", bus_trip.eq(&flight1)); // true
+    println!("bus_trip == flight1: {}", bus_trip == flight1); // true
 
     let musician1 = SingerSongWriter("John".to_string());
     let musician2 = SingerSongWriter("John".to_string());
