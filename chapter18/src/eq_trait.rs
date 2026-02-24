@@ -33,7 +33,7 @@ pub fn eq_trait() {
     println!("{}", b == c); // Transitive step: b == c
     println!("{}", a == c); // Transitive: a == b and b == c imply a == c
 
-    // why, not all types naturally support Eq, e.g. float because of NaN
+    // Not all types naturally support Eq (e.g., floats because of NaN)
     let division = 0.0 / 0.0;
     println!("{}", division);
 
