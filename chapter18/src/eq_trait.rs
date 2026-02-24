@@ -38,5 +38,5 @@ pub fn eq_trait() {
 
     let value = f64::consts::PI;
     println!("{}", value == value); // true
-    println!("{}", division == division); // false... NaN can not be compared to NaN
+    println!("{}", division == division); // false... NaN cannot be compared to NaN
 }
