@@ -1,3 +1,5 @@
+use std::f64;
+
 #[derive(Debug, PartialEq, Eq)]
 struct Flight {
     origin: String,
@@ -15,6 +17,8 @@ impl Flight {
     }
 }
 
+#[allow(clippy::eq_op)]
+#[allow(clippy::zero_divided_by_zero)]
 pub fn eq_trait() {
     println!("Implementing the Eq trait");
 
@@ -32,7 +36,7 @@ pub fn eq_trait() {
     let division = 0.0 / 0.0;
     println!("{}", division);
 
-    let value = 3.14;
+    let value = f64::consts::PI;
     println!("{}", value == value); // true
     println!("{}", division == division); // false... NaN can not be compared to NaN
 }
