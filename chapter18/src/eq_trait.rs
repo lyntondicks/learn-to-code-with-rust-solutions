@@ -27,10 +27,11 @@ pub fn eq_trait() {
     let c = Flight::new("New York", "Cape Town", "08:00");
 
     // Rules for Eq trait
-    println!("{}", a == a); // Reflexive a == a
+    println!("{}", a == a); // Reflexive: a == a
     println!("{}", a == b);
-    println!("{}", b == a); // symmetric a==b implies b==a
-    println!("{}", a == c); // transitive, a == b, b == c, implies a == c
+    println!("{}", b == a); // Symmetric: a == b implies b == a
+    println!("{}", b == c); // Transitive step: b == c
+    println!("{}", a == c); // Transitive: a == b and b == c imply a == c
 
     // why, not all types naturally support Eq, e.g. float because of NaN
     let division = 0.0 / 0.0;
