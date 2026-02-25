@@ -21,7 +21,7 @@ impl PartialOrd for Job {
 }
 
 pub fn partial_ord_trait() {
-    println!("PartialOrd trait");
+    println!("Partial Ord Trait");
 
     let long_commute_job = Job {
         salary: 10_000,
