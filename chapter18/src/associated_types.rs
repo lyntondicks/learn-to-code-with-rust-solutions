@@ -15,7 +15,7 @@ impl Add for Lunch {
     }
 }
 
-fn add_two_numbers<T: Add<Output = T>>(a: T, b: T) -> T {
+fn add_two_values<T: Add<Output = T>>(a: T, b: T) -> T {
     a + b
 }
 
@@ -27,6 +27,6 @@ pub fn associated_types() {
     let total_cost = lunch1 + lunch2;
     println!("Total lunch cost: ${:.2}", total_cost.cost);
 
-    println!("{}", add_two_numbers(f64::consts::PI, 2.3));
-    println!("{}", add_two_numbers(2, 3));
+    println!("{}", add_two_values(f64::consts::PI, 2.3));
+    println!("{}", add_two_values(2, 3));
 }
