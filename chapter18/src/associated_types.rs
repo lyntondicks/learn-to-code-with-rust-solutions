@@ -1,4 +1,4 @@
-use std::ops::Add;
+use std::{f64, ops::Add};
 
 #[derive(Debug)]
 struct Lunch {
@@ -27,6 +27,6 @@ pub fn associated_types() {
     let total_cost = lunch1 + lunch2;
     println!("Total lunch cost: ${:.2}", total_cost.cost);
 
-    println!("{}", add_two_numbers(3.14, 2.3));
+    println!("{}", add_two_numbers(f64::consts::PI, 2.3));
     println!("{}", add_two_numbers(2, 3));
 }
