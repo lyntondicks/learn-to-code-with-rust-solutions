@@ -108,7 +108,7 @@ impl Clone for Soda {
 
 impl PartialEq for Soda {
     fn eq(&self, other: &Self) -> bool {
-        self.price == other.price
+        self.calories == other.calories
     }
 }
 
@@ -125,7 +125,7 @@ pub fn project_solution() {
     let cappuccino = Coffee::new(String::from("Cappuccino"), Milk::Whole, 16);
     println!("{}", cappuccino.get_data());
 
-    let pepsi = Soda::new(300, 2.99, &String::from("Cherry Soda"), 100);
+    let pepsi = Soda::new(300, 2.99, "Cherry Soda", 100);
     println!("{}", pepsi);
 
     let mut coke = pepsi.clone();
