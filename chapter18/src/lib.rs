@@ -6,6 +6,7 @@ mod display_trait;
 mod eq_trait;
 mod partial_eq;
 mod partial_ord_trait;
+mod project_solution;
 mod trait_def_and_impl;
 mod traits_must_be_in_scope;
 
@@ -17,6 +18,7 @@ use display_trait::display_trait;
 use eq_trait::eq_trait;
 use partial_eq::partial_eq;
 use partial_ord_trait::partial_ord_trait;
+use project_solution::project_solution;
 use trait_def_and_impl::trait_def_and_impl;
 use traits_must_be_in_scope::traits_must_be_in_scope;
 
@@ -32,4 +34,5 @@ pub fn chapter18() {
     eq_trait();
     partial_ord_trait();
     associated_types();
+    project_solution();
 }
