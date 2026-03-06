@@ -1,5 +1,6 @@
 // when there is only one lifetime parameter, that lifetime is assigned to all output lifetime parameters.
 // You can omit the lifetime parameter annotation in this case, but is shown here for example.
+#[allow(clippy::needless_lifetimes)]
 fn select_first_two_elements<'a>(items: &'a [String]) -> &'a [String] {
     // deref coercion to a slice of a collection of Strings
     let selected_items = &items[..2];
