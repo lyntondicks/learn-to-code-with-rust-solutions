@@ -1,14 +1,10 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! # Chapter 19: References and Lifetimes
+//! This module contains examples and explanations of references and lifetimes in Rust.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+mod references_as_function_parameters;
+use crate::references_as_function_parameters::references_as_function_parameters;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub fn chapter19() {
+    println!("Chapter 19: References and Lifetimes");
+    references_as_function_parameters();
 }
