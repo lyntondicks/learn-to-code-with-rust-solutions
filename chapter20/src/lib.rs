@@ -15,6 +15,7 @@ pub fn chapter20() {
 }
 
 #[allow(clippy::unwrap_or_default)]
+#[allow(clippy::unnecessary_literal_unwrap)]
 fn fn_argument() {
     println!("Demonstrate passing a function argument to a fn trait param");
     let option: Option<Vec<String>> = None;
