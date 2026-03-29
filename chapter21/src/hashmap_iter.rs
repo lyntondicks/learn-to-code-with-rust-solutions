@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+#[allow(clippy::for_kv_map)]
 pub fn hashmap_iter() {
     println!("Chapter 21: HashMap Iteration");
 
