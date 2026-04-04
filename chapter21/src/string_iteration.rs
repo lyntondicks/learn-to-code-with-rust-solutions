@@ -1,3 +1,4 @@
+#[allow(clippy::needless_as_bytes)]
 pub fn string_iteration() {
     println!("Chapter 21: String Iteration");
 
