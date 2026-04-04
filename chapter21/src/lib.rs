@@ -2,6 +2,7 @@ mod hashmap_iter;
 mod into_iter;
 mod iter;
 mod iter_mut;
+mod string_iteration;
 
 pub fn chapter21() {
     println!("Chapter 21: Iterators");
@@ -9,4 +10,5 @@ pub fn chapter21() {
     iter::iter();
     iter_mut::iter_mut();
     hashmap_iter::hashmap_iter();
+    string_iteration::string_iteration();
 }
