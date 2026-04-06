@@ -2,6 +2,7 @@ mod hashmap_iter;
 mod into_iter;
 mod iter;
 mod iter_mut;
+mod map_adapter_and_collect;
 mod solving_problem_word_count;
 mod string_iteration;
 
@@ -13,4 +14,5 @@ pub fn chapter21() {
     hashmap_iter::hashmap_iter();
     string_iteration::string_iteration();
     solving_problem_word_count::solving_problem_word_count();
+    map_adapter_and_collect::map_adapter_and_collect();
 }
