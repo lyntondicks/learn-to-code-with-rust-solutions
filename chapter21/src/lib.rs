@@ -1,3 +1,4 @@
+mod any_and_all;
 mod filter_and_find;
 mod hashmap_iter;
 mod into_iter;
@@ -17,4 +18,5 @@ pub fn chapter21() {
     solving_problem_word_count::solving_problem_word_count();
     map_adapter_and_collect::map_adapter_and_collect();
     filter_and_find::filter_and_find();
+    any_and_all::any_and_all();
 }
