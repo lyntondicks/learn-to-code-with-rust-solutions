@@ -1,4 +1,5 @@
 mod any_and_all;
+mod cloned;
 mod filter_and_find;
 mod hashmap_iter;
 mod into_iter;
@@ -19,4 +20,5 @@ pub fn chapter21() {
     map_adapter_and_collect::map_adapter_and_collect();
     filter_and_find::filter_and_find();
     any_and_all::any_and_all();
+    cloned::cloned();
 }
