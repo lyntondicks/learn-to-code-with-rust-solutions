@@ -2,6 +2,7 @@ mod any_and_all;
 mod cloned;
 mod filter_and_find;
 mod filter_map;
+mod flat_map;
 mod flatten;
 mod hashmap_iter;
 mod into_iter;
@@ -25,4 +26,5 @@ pub fn chapter21() {
     cloned::cloned();
     filter_map::filter_map();
     flatten::flatten();
+    flat_map::flat_map();
 }
