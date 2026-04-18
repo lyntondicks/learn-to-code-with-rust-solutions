@@ -1,5 +1,6 @@
 mod any_and_all;
 mod cloned;
+mod enumerate;
 mod filter_and_find;
 mod filter_map;
 mod flat_map;
@@ -27,4 +28,5 @@ pub fn chapter21() {
     filter_map::filter_map();
     flatten::flatten();
     flat_map::flat_map();
+    enumerate::enumerate();
 }
