@@ -10,6 +10,7 @@ mod into_iter;
 mod iter;
 mod iter_mut;
 mod map_adapter_and_collect;
+mod partition;
 mod solving_problem_word_count;
 mod string_iteration;
 
@@ -29,4 +30,5 @@ pub fn chapter21() {
     flatten::flatten();
     flat_map::flat_map();
     enumerate::enumerate();
+    partition::partition();
 }
