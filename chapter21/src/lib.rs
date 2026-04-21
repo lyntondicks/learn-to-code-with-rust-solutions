@@ -13,6 +13,7 @@ mod map_adapter_and_collect;
 mod partition;
 mod solving_problem_word_count;
 mod string_iteration;
+mod zip;
 
 pub fn chapter21() {
     println!("Chapter 21: Iterators");
@@ -31,4 +32,5 @@ pub fn chapter21() {
     flat_map::flat_map();
     enumerate::enumerate();
     partition::partition();
+    zip::zip();
 }
