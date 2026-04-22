@@ -5,6 +5,7 @@ mod filter_and_find;
 mod filter_map;
 mod flat_map;
 mod flatten;
+mod fold;
 mod hashmap_iter;
 mod into_iter;
 mod iter;
@@ -33,4 +34,5 @@ pub fn chapter21() {
     enumerate::enumerate();
     partition::partition();
     zip::zip();
+    fold::fold();
 }
