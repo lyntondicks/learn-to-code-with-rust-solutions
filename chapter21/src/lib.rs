@@ -12,6 +12,7 @@ mod iter;
 mod iter_mut;
 mod map_adapter_and_collect;
 mod partition;
+mod reduce;
 mod solving_problem_word_count;
 mod string_iteration;
 mod zip;
@@ -35,4 +36,5 @@ pub fn chapter21() {
     partition::partition();
     zip::zip();
     fold::fold();
+    reduce::reduce();
 }
