@@ -1,6 +1,7 @@
 mod any_and_all;
 mod cloned;
 mod consuming_adapters_numerical;
+mod element_position;
 mod enumerate;
 mod filter_and_find;
 mod filter_map;
@@ -39,4 +40,5 @@ pub fn chapter21() {
     fold::fold();
     reduce::reduce();
     consuming_adapters_numerical::consume_adapters_numerical();
+    element_position::element_position();
 }
