@@ -12,6 +12,7 @@ mod hashmap_iter;
 mod into_iter;
 mod iter;
 mod iter_mut;
+mod iteration_flow;
 mod map_adapter_and_collect;
 mod partition;
 mod reduce;
@@ -41,4 +42,5 @@ pub fn chapter21() {
     reduce::reduce();
     consuming_adapters_numerical::consume_adapters_numerical();
     element_position::element_position();
+    iteration_flow::iteration_flow();
 }
