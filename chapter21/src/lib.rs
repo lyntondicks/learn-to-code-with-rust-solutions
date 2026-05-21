@@ -17,6 +17,7 @@ mod map_adapter_and_collect;
 mod partition;
 mod reduce;
 mod solving_problem_word_count;
+mod sorting;
 mod string_iteration;
 mod zip;
 
@@ -43,4 +44,5 @@ pub fn chapter21() {
     consuming_adapters_numerical::consume_adapters_numerical();
     element_position::element_position();
     iteration_flow::iteration_flow();
+    sorting::sorting();
 }
