@@ -13,6 +13,7 @@ mod into_iter;
 mod iter;
 mod iter_mut;
 mod iteration_flow;
+mod lines;
 mod map_adapter_and_collect;
 mod partition;
 mod reduce;
@@ -45,4 +46,5 @@ pub fn chapter21() {
     element_position::element_position();
     iteration_flow::iteration_flow();
     sorting::sorting();
+    lines::lines();
 }
