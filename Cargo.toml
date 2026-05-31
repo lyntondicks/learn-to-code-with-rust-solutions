@@ -1,4 +1,28 @@
 [workspace]
 resolver = "3"
-members = ["chapter10", "chapter11", "chapter12", "chapter13", "chapter14", "chapter15", "chapter16", "chapter17", "chapter18", "chapter19","chapter2", "chapter20", "chapter21", "chapter3", "chapter4", "chapter5", "chapter6", "chapter7", "chapter8", "chapter9","solutions-app"]
-default-members = ["solutions-app"]
+
+members = ["crates/*"]
+default-members = ["crates/solutions-app"]
+
+[workspace.dependencies]
+solutions-app = { path = "crates/solutions-app" }
+chapter2 = { path = "crates/chapter2" }
+chapter3 = { path = "crates/chapter3" }
+chapter4 = { path = "crates/chapter4" }
+chapter5 = { path = "crates/chapter5" }
+chapter6 = { path = "crates/chapter6" }
+chapter7 = { path = "crates/chapter7" }
+chapter8 = { path = "crates/chapter8" }
+chapter9 = { path = "crates/chapter9" }
+chapter10 = { path = "crates/chapter10" }
+chapter11 = { path = "crates/chapter11" }
+chapter12 = { path = "crates/chapter12" }
+chapter13 = { path = "crates/chapter13" }
+chapter14 = { path = "crates/chapter14" }
+chapter15 = { path = "crates/chapter15" }
+chapter16 = { path = "crates/chapter16" }
+chapter17 = { path = "crates/chapter17" }
+chapter18 = { path = "crates/chapter18" }
+chapter19 = { path = "crates/chapter19" }
+chapter20 = { path = "crates/chapter20" }
+chapter21 = { path = "crates/chapter21" }
