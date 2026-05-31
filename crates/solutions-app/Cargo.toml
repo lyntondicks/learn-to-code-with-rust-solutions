@@ -1,0 +1,25 @@
+[package]
+name = "solutions_app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chapter2 = { workspace = true }
+chapter3 = { workspace = true }
+chapter4 = { workspace = true }
+chapter5 = { workspace = true }
+chapter6 = { workspace = true }
+chapter7 = { workspace = true }
+chapter8 = { workspace = true }
+chapter9 = { workspace = true }
+chapter10 = { workspace = true }
+chapter11 = { workspace = true }
+chapter12 = { workspace = true }
+chapter13 = { workspace = true }
+chapter15 = { workspace = true}
+chapter16 = { workspace = true }
+chapter17 = { workspace = true }
+chapter18 = { workspace = true }
+chapter19 = { workspace = true }
+chapter20 = { workspace = true }
+chapter21 = { workspace = true }
