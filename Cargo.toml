@@ -4,6 +4,9 @@ resolver = "3"
 members = ["crates/*"]
 default-members = ["crates/solutions-app"]
 
+[workspace.dev-dependencies]
+pretty_assertions = "1.4.1"
+
 [workspace.dependencies]
 colored = "3.1.1"
 solutions-app = { path = "crates/solutions-app" }
@@ -27,3 +30,4 @@ chapter18 = { path = "crates/chapter18" }
 chapter19 = { path = "crates/chapter19" }
 chapter20 = { path = "crates/chapter20" }
 chapter21 = { path = "crates/chapter21" }
+chapter22 = { path = "crates/chapter22" }
