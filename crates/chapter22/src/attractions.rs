@@ -1,3 +1,5 @@
+#![allow(clippy::new_without_default)]
+
 pub trait TicketSeller {
     fn sell_ticket(&mut self);
 }
