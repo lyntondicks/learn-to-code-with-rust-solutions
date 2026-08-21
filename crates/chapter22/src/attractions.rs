@@ -99,6 +99,7 @@ mod tests {
     use pretty_assertions::{assert_eq, assert_ne};
 
     #[test]
+    #[allow(clippy::assertions_on_constants)]
     fn print_success() {
         // Show any printed output when running the tests: `cargo test -- --show-output`
         println!("Success inside the function");
